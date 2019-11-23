@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 experiment_number = 0
-experiment_path = '../../result/'
+experiment_path = './results/'
 
 if len(sys.argv) == 2:
     experiment_number = int(sys.argv[1])
@@ -16,7 +16,7 @@ spiking_neurons = 400
 
 
 # LOAD TRAINING LABELS
-training_data_path = "../../data/"
+training_data_path = "./data/"
 training_y = np.load(training_data_path + 'MNIST-training-labels.npy')
 
 

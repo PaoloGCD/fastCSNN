@@ -4,20 +4,20 @@ import tensorflow as tf
 
 
 experiment_number = 0
-experiment_path = '../../result/'
+experiment_path = './results/'
 
 if len(sys.argv) == 2:
     experiment_number = int(sys.argv[1])
 
 
 # LOAD TRAINING LABELS
-training_data_path = "../../data/"
+training_data_path = "./data/"
 training_x = np.load(training_data_path + 'MNIST-training-samples.npy')
 training_y = np.load(training_data_path + 'MNIST-training-labels.npy')
 
 
 # LOAD TESTING LABELS
-testing_data_path = "../../data/"
+testing_data_path = "./data/"
 testing_x = np.load(testing_data_path + 'MNIST-testing-samples.npy')
 testing_y = np.load(testing_data_path + 'MNIST-testing-labels.npy')
 
@@ -67,4 +67,4 @@ print val_hist
 print 'mean', val_hist.mean(axis=0)
 print 'std', val_hist.std(axis=0)
 
-np.save(experiment_path + 'result' + str(experiment_number) + '/nn_validation', val_hist)
+np.save(experiment_path + 'results' + str(experiment_number) + '/nn_validation', val_hist)

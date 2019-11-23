@@ -20,7 +20,7 @@ from brian import ms
 experiment_number = 0
 blurring_number = 5
 class_number = -1
-experiment_path = '../../result/'
+experiment_path = './results/'
 
 if len(sys.argv) == 4:
     experiment_number = int(sys.argv[1])
@@ -65,7 +65,7 @@ input_image_time = 350 * b.ms
 
 
 # LOAD TRAINING SET
-training_data_path = "../../data/"
+training_data_path = "./data/"
 
 training_x = np.load(training_data_path + 'MNIST-training-samples.npy')
 training_x = training_x.astype('float')/8.0

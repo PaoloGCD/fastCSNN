@@ -14,7 +14,7 @@ import brian as b
 from brian import ms
 
 experiment_number = 0
-experiment_path = '../../result/'
+experiment_path = './results/'
 
 if len(sys.argv) == 2:
     experiment_number = int(sys.argv[1])
@@ -51,7 +51,7 @@ resting_time = 150 * b.ms
 
 
 # LOAD TRAINING SET
-training_data_path = "../../data/"
+training_data_path = "./data/"
 
 training_x = np.load(training_data_path + 'MNIST-training-samples.npy')
 training_x = training_x.astype('float')

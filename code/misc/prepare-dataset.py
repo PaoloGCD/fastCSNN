@@ -15,7 +15,7 @@ import cPickle as pickle
 from struct import unpack
 
 
-MNIST_data_path = '../../data/'
+MNIST_data_path = './'
 
 
 def process_dataset(dataset_name, bTrain=True):

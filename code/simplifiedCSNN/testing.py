@@ -17,7 +17,7 @@ from brian import ms
 
 
 experiment_number = 0
-experiment_path = '../../result/'
+experiment_path = './results/'
 
 if len(sys.argv) == 2:
     experiment_number = int(sys.argv[1])
@@ -52,7 +52,7 @@ load_delay = np.load(experiment_path + 'result' + str(experiment_number) + '/tra
 
 
 # LOAD TESTING SET
-testing_data_path = "../../data/"
+testing_data_path = "./data/"
 
 testing_x = np.load(testing_data_path + 'MNIST-testing-samples.npy')
 testing_x = testing_x.astype('float')/8.0

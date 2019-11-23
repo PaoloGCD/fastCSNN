@@ -4,7 +4,7 @@ import numpy as np
 
 experiment_number = 0
 number_experiments = 1
-experiment_path = '../../result/'
+experiment_path = './results/'
 
 if len(sys.argv) == 3:
     experiment_number = int(sys.argv[1])
@@ -12,12 +12,12 @@ if len(sys.argv) == 3:
 
 
 # LOAD TRAINING LABELS
-training_data_path = "../../data/"
+training_data_path = "./data/"
 training_y = np.load(training_data_path + 'MNIST-training-labels.npy')
 
 
 # LOAD TESTING LABELS
-testing_data_path = "../../data/"
+testing_data_path = "./data/"
 testing_y = np.load(testing_data_path + 'MNIST-testing-labels.npy')
 
 
