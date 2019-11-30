@@ -100,7 +100,7 @@ neuron_groups['spiking'] = b.NeuronGroup(N=spiking_neurons, model=neuron_eqs_e, 
                                          refractory=time_refractory_e, reset=reset_eqs_e, compile=True, freeze=True)
 
 neuron_groups['spiking'].v = v_rest_e
-neuron_groups['spiking'].theta = 20 * b.mV
+neuron_groups['spiking'].theta = load_theta
 
 
 # DEFINE CONNECTIONS
